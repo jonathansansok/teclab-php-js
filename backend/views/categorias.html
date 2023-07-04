@@ -9,21 +9,23 @@
   </head>
   <body>
     <h1>Alta de categorias de productos</h1>
-    <form>
+    <form id="form-catgs">
       <label for="nombre">Nombre de la categoria</label>
-      <input type="text" id="nombre" name="nombre" placeholder=Nombre de
-      usuario" required >
+      <input type="text" id="nombre" name="nombre" >
 
       <label for="id">id:</label>
-      <input type="text" id="id" name="id" required />
+      <input type="text" id="id" name="id"  />
 
       <label for="descripcion">Descripcion</label>
       <textarea name="descripcion" id="descripcion" rows="5"></textarea>
 
       <button type="submit">Guardar</button>
-      <button type="button" class="cancel">CANCELAR</button>
+      <button type="button" class="cancel">Cancelar</button>
     </form>
     <div class="tag"> &copy; Jonathan Sansó</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../../assets/js/validaciones.js"></script>
     
   </body>
 </html>
