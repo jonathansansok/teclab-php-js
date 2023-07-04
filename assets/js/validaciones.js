@@ -7,7 +7,7 @@
         event.preventDefault();
         $('#form-catgs input[type="text"], #form-catgs textarea').each(function(){
           if($(this).val() === ''){
-            alert('Please enter a value, cannot be empty - Developed by John Sanso');
+            alert('Please enter a value, cannot be empty - Developed by John Sansó');
             $(this).focus();
             return false;
           }   
@@ -18,7 +18,7 @@
         event.preventDefault();
         $('#form-prods input[type="text"], #form-prods textarea').each(function(){
           if($(this).val() === ''){
-            alert('Please enter a value, cannot be empty - Developed by John Sanso');
+            alert('Please enter a value, cannot be empty - Developed by John Sansó');
             $(this).focus();
             return false;
           }   

@@ -5,38 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/css/estilos.css" />
-    <title>Productos</title>
+    <title>Productos Musicales</title>
   </head>
   <body>
-    <h1>Alta de productos</h1>
+    <h1> Tienda Sansóund</h1>
+    <h2> Dar alta a productos</h2>
     <form id="form-prods">
-      <label for="nombre">Nombre del producto</label>
+      <label for="nombre">Nombre de producto:</label>
       <input type="text" id="nombre" name="nombre" />
 
-      <label for="descripcion">Descripcion</label>
+      <label for="descripcion">Descripción de producto:</label>
       <textarea id="descripcion" name="descripcion" rows="5"></textarea>
-
-      <label for="descripcion">Descripcion</label>
-      <textarea name="descripcion" id="descripcion" rows="5"></textarea>
 
       <label for="categoria">Categoria:</label>
       <select id=" categoria" name="categoria">
         <option value="">Seleccionar</option>
-        <option value="1">Celulares</option>
-        <option value="2">Computadoras</option>
-        <option value="3">Tablets</option>
-        <option value="4">Accesorios</option>
+        <option value="1">Guitarras</option>
+        <option value="2">Bajos</option>
+        <option value="3">Pianos</option>
+        <option value="4">Baterias</option>
       </select>
-      <label for="imagen">Imagen:</label>
+      <label class="clase-de-imagen" for="imagen">Imagen:</label>
 
       <input type="file" id="imagen" name="imagen" accept="image/*" />
       <label for="precio">Precio:</label>
       <input type="text" id-"precio" name=" precio">
 
       <button type="submit">Guardar</button>
-      <button type="button" class="cancel">CANCELAR</button>
+      <button type="button" class="cancel">Cancelar</button>
     </form>
-    <div class="tag">&copy; Jonathan Sansó</div>
+    <div class="tag">Jonathan Sansó 🖥️</div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="../../assets/js/validaciones.js"></script>

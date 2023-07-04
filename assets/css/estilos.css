@@ -7,26 +7,42 @@ body{
     background-color: black;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
 }
 h1{
     text-align: center;
-    margin-top: 50px ;
+    margin-top: 20px ;
+    color: white;
+}
+h2{
+    text-align: center;
+    margin-top: 10px ;
     color: cyan;
 }
 
 form{
-    background-color: #ffffff;
+    background-color: black;
     max-width: 500px;
-    margin: 50px auto;
+    margin:10px 10px 10px;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: cyan;
+    border: solid 1px cyan;
 }
 
 label{
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    align-self: center;
+    
 }
 input,
 textarea {display: block;
@@ -36,8 +52,11 @@ textarea {display: block;
     border-radius: 5px;
     margin-bottom: 20px;
     resize: vertical;
+    align-self: center;
 
-
+}
+.clase-de-imagen{
+    margin-top: 10px ;
 }
 button{
     background-color: green;
@@ -49,11 +68,13 @@ button{
 }
 button.cancel{
     background-color: black;
+    margin-top: 10px;
 
 }
 
 
 .tag{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    color: cyan;
 }
