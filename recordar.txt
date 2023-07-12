@@ -1,5 +1,8 @@
 primero ejecutar Wamp server desde inicio 
 luego
+abrir desde visual studio code el proyecto que ya esta guardado en 
+la carpeta www de Wamp server
+luego
 entrar en navegador a http://localhost/phpmyadmin
 (para maniobrar sql a mano)
 luego
