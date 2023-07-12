@@ -1,5 +1,8 @@
+primero ejecutar Wamp server desde inicio 
+luego
+entrar en navegador a http://localhost/phpmyadmin
+(para maniobrar sql a mano)
+luego
 entrar en http://localhost/ej-teclab/backend/categorias.php?add
 (carpetas del proyecto en navegador)
 
-entrar en navegador a http://localhost/phpmyadmin
-(para maniobrar sql a mano)
