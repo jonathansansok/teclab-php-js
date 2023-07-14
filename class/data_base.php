@@ -5,7 +5,7 @@ try{
     $conector = new PDO("mysql:dbname=miproyecto;host=127.0.0.1", "root", "");
     echo"Bien conectado";
 }catch(Exception $ex){
-    echo 'Falló la conexión . $ex'->getMessage();
+    echo "Falló la conexión" . $ex->getMessage();
 }
 
 class base_datos{
@@ -63,7 +63,7 @@ class base_datos{
             return $this->gbd->lastInsertId();
         } else{
             echo '<pre>';
-            print_r($resource->errorInfo());
+            print_r($resource(false)->errorInfo()); //ojo con el (false) que puede no ir en verdad
             echo '</pre>';
             throw new Exception('No se pudo realizar la consulta de seleccion');
         }
@@ -79,7 +79,7 @@ class base_datos{
             return true;
         } else {
             echo '<pre>';
-            print_r($resource->errorInfo());
+            print_r($resource(false)->errorInfo()); //ojo con el (false) que puede no ir en verdad
             echo '</pre>';
             throw new Exception("No se pudo realizar la consulta ");
         }

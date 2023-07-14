@@ -4,7 +4,7 @@
 include '../class/autoload.php';
 
 if(isset($_POST['accion']) && $_POST['accion'] === 'guardar'){
-    $miproducto = new Productos();
+    $miproducto = new Productos('producto'); // ojo que 'producto puede NO IR
     $miproducto->nombre=$_POST['producto'];
     $miproducto->descripcion=$_POST['descripcion'];
     $miproducto->precio=$_POST['precio'];
