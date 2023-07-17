@@ -1,6 +1,3 @@
-/* $(document).ready(function() {
-    console.log('hola mundo')
-}) */
 
  $(document).ready(function() {
     $('#form-catgs').submit(function(event){
@@ -18,7 +15,7 @@
         event.preventDefault();
         $('#form-prods input[type="text"], #form-prods textarea').each(function(){
           if($(this).val() === ''){
-            alert('Please enter a value, cannot be empty - Developed by John Sansó');
+            alert('Debe completar la seccion ' +  $(this).attr('name') + ' - Developed by John Sansó');
             $(this).focus();
             return false;
           }   
