@@ -12,13 +12,17 @@
     <h2> Dar alta a productos</h2>
     <form id="form-prods">
       <input type="hidden" name="accion" value="guardar">
-      <label >Ingrese Producto</label>
+      <label >Ingrese Nombre de Producto</label>
       <input type="text" required id="nombre-producto" name="nombre-producto">
       
       <label >Stock</label>
       <input type="number" required id="stock-producto" autocomplete="off" name="stock-producto">
       <label >Precio</label>
       <input type="number" required id="precio-producto" autocomplete="off" name="precio-producto">
+      
+      <label for="descripcion">Descripción de producto:</label>
+      <textarea id="descripcion" name="descripcion" rows="5"></textarea>
+
       <label for="categoria">Categoria:</label>
       <select id=" categoria" name="categoria">
         <option value="">Seleccionar</option>
@@ -30,9 +34,7 @@
       <label class="clase-de-imagen" for="imagen">Imagen:</label>
 
       <input type="file" id="imagen" name="imagen" accept="image/*" />
-     
-      <label >Imagen</label>
-      <input type="text" id="imagen-producto" autocomplete="off" name="imagen-producto">
+
       <button type="submit">Enviar</button>
       <button type="reset" >Borrar</button>
     </form>
