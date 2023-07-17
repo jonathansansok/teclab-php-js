@@ -11,28 +11,24 @@
     <h1> Tienda Sansóund</h1>
     <h2> Dar alta a productos</h2>
     <form id="form-prods">
-      <label for="nombre">Nombre de producto:</label>
-      <input type="text" id="nombre" name="nombre" />
-
-      <label for="descripcion">Descripción de producto:</label>
-      <textarea id="descripcion" name="descripcion" rows="5"></textarea>
-
-      <label for="categoria">Categoria:</label>
-      <select id=" categoria" name="categoria">
-        <option value="">Seleccionar</option>
-        <option value="1">Guitarras</option>
-        <option value="2">Bajos</option>
-        <option value="3">Pianos</option>
-        <option value="4">Baterias</option>
+      <input type="hidden" name="accion" value="guardar">
+      <label >Ingrese Producto</label>
+      <input type="text" required id="nombre-producto" name="nombre-producto">
+      
+      <label >Stock</label>
+      <input type="number" required id="stock-producto" autocomplete="off" name="stock-producto">
+      <label >Precio</label>
+      <input type="number" required id="precio-producto" autocomplete="off" name="precio-producto">
+      <label>Seleccione categoria</label>
+      <select id="categoria-producto" required name="categoria-producto">
+          <?php foreach($categorias as $categoria){ ?>
+          <option value="<?php echo $categoria['id'] ?>"> <?php echo $categoria['nombre'] ?> </option>
+          <?php } ?>
       </select>
-      <label class="clase-de-imagen" for="imagen">Imagen:</label>
-
-      <input type="file" id="imagen" name="imagen" accept="image/*" />
-      <label for="precio">Precio:</label>
-      <input type="text" id-"precio" name=" precio">
-
-      <button type="submit">Guardar</button>
-      <button type="button" class="cancel">Cancelar</button>
+      <label >Imagen</label>
+      <input type="text" id="imagen-producto" autocomplete="off" name="imagen-producto">
+      <button type="submit">Enviar</button>
+      <button type="reset" >Borrar</button>
     </form>
     <div class="tag">Jonathan Sansó 🖥️</div>
 
