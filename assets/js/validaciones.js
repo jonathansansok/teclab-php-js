@@ -1,27 +1,43 @@
-/* $(document).ready(function() {
-    console.log('hola mundo')
-}) */
+$("form#form-catgs").on("submit",function(){
+  const nombre = $.trim($("#nombre-de-categoria").val());
+  const error = []
+  if(nombre === ""){
+      error.push("por favor, complete el nombre")
+  }
+  if(error.length > 0){
+      alert(error.join("\n"));
+      return false;
+  }
+  return true;
+})
 
- $(document).ready(function() {
-    $('#form-catgs').submit(function(event){
-        event.preventDefault();
-        $('#form-catgs input[type="text"], #form-catgs textarea').each(function(){
-          if($(this).val() === ''){
-            alert('Please enter a value, cannot be empty - Developed by John Sansó');
-            $(this).focus();
-            return false;
-          }   
-        })
-    })
-    //////////////////////
-    $('#form-prods').submit(function(event){
-        event.preventDefault();
-        $('#form-prods input[type="text"], #form-prods textarea').each(function(){
-          if($(this).val() === ''){
-            alert('Please enter a value, cannot be empty - Developed by John Sansó');
-            $(this).focus();
-            return false;
-          }   
-        })
-    })
-}) 
+$("form#form-prods").on("submit",function(){
+  const nombre = $.trim($("#nombre-producto").val())
+  const stock = $("#stock-producto").val()
+  const categoria =  $("#categoria-producto").val()
+  const imagen = $("#imagen-producto").val()
+  const precio = $("#precio-producto").val()
+  const error = []
+  if(nombre == ""){
+      error.push("por favor, complete el nombre")
+  }
+  if(stock < 1 ){
+      error.push("por favor, ingrese un stock que corresponda")
+  }
+  if(categoria == null || categoria == ""){
+      error.push("por favor, seleccione una categoria")
+  }
+  if(imagen == ""){
+      error.push("por favor, ingrese una imagen")
+  }
+  if(precio < 1 ){
+      error.push("por favor, ingrese precio")
+  }
+  if(error.length > 0){
+      alert(error.join("\n"));
+      return false;
+  }
+  return true;
+})
+
+
