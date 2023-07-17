@@ -19,12 +19,18 @@
       <input type="number" required id="stock-producto" autocomplete="off" name="stock-producto">
       <label >Precio</label>
       <input type="number" required id="precio-producto" autocomplete="off" name="precio-producto">
-      <label>Seleccione categoria</label>
-      <select id="categoria-producto" required name="categoria-producto">
-          <?php foreach($categorias as $categoria){ ?>
-          <option value="<?php echo $categoria['id'] ?>"> <?php echo $categoria['nombre'] ?> </option>
-          <?php } ?>
+      <label for="categoria">Categoria:</label>
+      <select id=" categoria" name="categoria">
+        <option value="">Seleccionar</option>
+        <option value="1">Guitarras</option>
+        <option value="2">Bajos</option>
+        <option value="3">Pianos</option>
+        <option value="4">Baterias</option>
       </select>
+      <label class="clase-de-imagen" for="imagen">Imagen:</label>
+
+      <input type="file" id="imagen" name="imagen" accept="image/*" />
+     
       <label >Imagen</label>
       <input type="text" id="imagen-producto" autocomplete="off" name="imagen-producto">
       <button type="submit">Enviar</button>
