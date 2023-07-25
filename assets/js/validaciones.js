@@ -10,18 +10,24 @@ $(document).ready(function () {
 
       if (nombre == "") {
         $("#mensaje1").fadeIn();
+        alert('Debe completar la seccion ' +  $(this).attr('name') + ' - Developed by John Sansó');
+        $(this).focus();
         return false;
       } else {
         $("#mensaje2").fadeOut();
       }
       if (correo == "" || expr.test(correo)) {
         $("#mensaje2").fadeIn();
+        alert('Debe completar la seccion ' +  $(this).attr('name') + ' - Developed by John Sansó');
+        $(this).focus();
         return false;
       } else {
         $("#mensaje2").fadeOut();
       }
       if (asunto == "") {
         $("#mensaje3").fadeIn();
+        alert('Debe completar la seccion ' +  $(this).attr('name') + ' - Developed by John Sansó');
+        $(this).focus();
         return false;
       }
     });
