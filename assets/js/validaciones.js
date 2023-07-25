@@ -6,8 +6,6 @@ $(document).ready(function () {
       var nombre = $("#nombre").val();
       var correo = $("#id").val();
       var asunto = $("#descripcion-de-cat").val();
-
-
       if (nombre == "") {
         $("#mensaje1").fadeIn();
         alert('Debe completar la seccion ' +  $(this).attr('name') + ' - Developed by John Sansó');
